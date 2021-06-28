@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url(style_reset.css);
+
+/* div#headerFrame */
+div#headerFrame {
+    background-color: #eee;
+}
+
+#headerFrame > header#header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+    /* headerLogo */
+div#headerLogo {
+    width: 200px;
+    text-align: center;
+    line-height: 100px;
+    /*border: 1px solid #000;*/
+}
+    /* headerLogo */
+
+    /* nav#gnb */
+nav#gnb {
+    /*border: 1px solid #08f;*/
+
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#gnb ul#mainMenu {
+    /* display-flex 적용되어있음 */
+
+    height: 100px;
+    padding-right: 40px;
+    /*border: 4px dotted #000;*/
+
+    justify-content: flex-end; /* 가로방향 정렬 */
+    align-items: flex-end; /* 세로방향 정렬 */
+}
+
+#gnb a {
+    width: 150px;
+    height: 48px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+
+    display: inline-block;
+}
+
+#gnb li.mainLi>a {
+    /*border: 1px solid rgba(149, 209, 127, 0.87);*/
+    border: 1px solid #ccc;
+}
+
+#gnb ul.subMenu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+#gnb li.subLi>a {
+    color: #fff;
+}
+
+    /*gnb메뉴 하이라이트 효과*/
+#gnb li.mainLi:hover>a {
+    color: #fff;
+    background-color: rgba(0, 136, 255, 0.81);
+}
+#gnb li.subLi>a:hover {
+    color: #222;
+    background-color: #eee;
+}
+    /*gnb메뉴 하이라이트 효과*/
+
+    /* nav#gnb */
+
+/* div#headerFrame */
+
+
+/* div#gnbBG GNB배경*/
+div#gnbBGFrame {
+    width: 1200px;
+/*border: 1px solid #f00;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+div#gnbBG {
+    width: 1200px;
+    height: 193px;
+    /*border: 1px solid #000;*/
+
+    background-color: rgba(0, 136, 255, 0.81);
+
+
+    position: absolute;
+    display: none;
+}
+
+/* div#gnbBG GNB배경*/
+
+
+/* div#wrap */
+div#wrap {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#wrap h2 {
+    text-align: center;
+    line-height: 300px;
+}
+
+/* div#wrap */
