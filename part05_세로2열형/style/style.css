@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(style_reset.css);
+
+div#wrap {
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav#gnb {
+    padding: 20px;
+    /*border: 1px solid #aaa;*/
+    margin: 20px auto;
+}
+
+/*#gnb>ul#mainMenu {
+    border: 1px solid #000;
+}*/
+#gnb li.mainLi {
+    text-align: center;
+    /*border: 1px solid #f80;*/
+
+    position: relative;
+    /*자식요소 ul.subMenu가 pos:a 이므로
+    위치를 left를 사용했을때 기준위치를
+    바디요소로 설정하지 못하도록 만듬*/
+}
+#gnb a {
+    width: 160px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#gnb li.mainLi>a {
+    height: 50px;
+    line-height: 50px;
+}
+
+#gnb li.mainLi:hover>a {
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+#gnb li.subLi>a:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+#gnb ul.subMenu {
+
+    /*margin-left: 238px;*/
+    /*transform: translateX(160px);*/
+    left: 239px;
+    top: 0px;
+    /*위3가지방법: 서브메뉴를 오른쪽으로보냄*/
+
+    position: absolute;
+
+    display: none;
+}
+
+#gnb li.subLi>a {
+    height: 40px;
+    line-height: 40px;
+
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
